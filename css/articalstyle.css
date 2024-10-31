@@ -1,0 +1,187 @@
+/**
+ * @name          : Post Recommendation
+ * @version	      : 1.0
+ * @package       : apptha
+ * @subpackage    : article-recommendation
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license	      : GNU General Public License version 2 or later; see LICENSE.txt
+ * @Creation Date : Jan 27 2012
+ * @Email         : kranthikumar@contus.in
+ * @Modified Date : Jan 27 2012
+ * @Purpus        : This file is used to do apply the css styles
+ * */
+
+.fly_open {
+   
+    -webkit-transition: right 200ms ease-in 50ms;
+	-moz-transition: right 200ms ease-in 50ms;
+	
+transitions:[{
+
+        type:"blinds",
+
+        duration:150,
+
+       direction:"horizontal",
+
+        easing:"ease-in",
+
+        parts:16,
+
+        partDuration:300,
+
+        partEasing:"quadIn",
+
+        method:"fade"
+
+      }]
+
+	 
+}        
+  fly_close {
+    -moz-transition: right 200ms ease-out 100ms;
+      -webkit-transition: right 200ms ease-out 100ms;
+      transition: right 200ms ease-out 100ms;
+      
+}
+
+ .fly_open_left {
+  
+    -webkit-transition: left 200ms ease-in 50ms;
+	-moz-transition: left 200ms ease-in 50ms;
+	transition: left 200ms ease-in 50ms;
+    left: 0px;
+}        
+  fly_close_left {
+    -moz-transition: left 200ms ease-out 100ms;
+    -webkit-transition: right 200ms ease-out 100ms;
+     transition: right 200ms ease-out 100ms;
+    
+} 
+         #popup {
+  	background-color: rgb(68,68,68); /* Needed for IEs */
+  	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+				-moz-box-shadow: 0 0px 10px #555;
+				-webkit-box-shadow: 0 0px 10px #555;
+				 box-shadow: 0 0px 10px #555;
+				 -khtml-box-shadow: 0 0px 10px #555;
+				background-color: white;
+			/*	border: 1px solid #666; */
+				bottom: 0px;
+				padding: 4px 4px 4px 4px;
+				position: fixed;
+				width: 278px;
+				z-index: 99999;
+			
+				display: none;
+				
+				}
+
+			#readnexttext{
+			
+			 -webkit-transform: rotate(270deg); 
+			 -moz-transform: rotate(270deg);
+			 -o-transform: rotate(270deg);
+			 -ms-transform:rotate(270deg);
+			 padding: 0px 0px 0px 1px;
+			 position: absolute;
+			 z-index:99999;
+			 top: 52px; 
+		     cursor: default;
+		    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			display: none;
+			
+			}	
+		    .close_image {
+		    
+				top: 4px;
+				right: 4px;
+				float: right;
+				position: absolute;
+				
+			}
+			.closeimageid{
+				right: 22px;
+			}
+				
+ #popuptop{
+ right:-290px;
+ background-color: white;
+ width: 278px;
+ position: fixed;
+ top:-1px;
+ border: 1px solid #666;
+ z-index:99999;
+ -moz-box-shadow: 0 0px 10px #555;
+ -webkit-box-shadow: 0 0px 10px #555;
+ box-shadow: 0 0px 10px #555;
+ padding: 4px;
+ display: none; 
+ }
+         #popup_wrapper{margin: 0px ;padding: 0 0 0 0;direction: ltr;text-align: left;vertical-align: middle; }
+.strip-like{float: left;margin-left: 7px; }
+         .strip-like a{
+         text-decoration: none;
+         cursor: pointer;padding: 6px 0px 5px 4px;
+         color: gray;font-size: 10px !important;font-family: arial;line-height:auto;
+         height:auto;
+         
+         float:left;}
+       
+         .close_click {display: block;width: 16px;height: 17px;margin: 0px;
+         background:url('../images/closeblock.png');
+         cursor: pointer;text-indent: -5000px;float:right;}
+         #popupbox{width: 100%;position: relative;overflow: hidden; padding-top: 3px;}
+         #popupbox h1 {padding: 0 10px !important;margin: 0px !important;float:left;}
+         .popup_text{
+       float: left;
+padding-bottom: 1px;
+margin-left: 10px;
+width: 63%;
+         }
+         #popupContact .popup_text h4{padding: 0px;margin: 0px;line-height: 3px;}
+         .popup_text h4 a{line-height: 12px;color: #1E598C !important;font-size: 11px !important;font-weight: bold !important;font-family: arial !important;padding: 0px;margin: 0px;}
+         .popup_text p{padding-top: 6px;margin: 0px;font-family: arial;font-size: 11px;color: black;}
+
+         .footer_btnlink a{text-decoration: none;cursor: pointer;color: gray;font-size: 10px !important;font-family: arial;height: auto;}
+         .footer_btnlink{float: left;width:355px;}
+.article-content-style{
+line-height: 16px;
+}
+.facebookTwittershare{
+float: right;
+padding-top: 6px;
+}
+.facebookstyles{
+float: left;
+margin-top: -9px;
+padding-left: 15px;
+width: 89px;
+}
+.twitterlike{
+float: left;
+width: 78px;
+}
+#article-power-by-apptha{
+
+text-align: center;
+margin: 0px;
+margin-left: 27px;
+font-size: 11px;
+font-weight: 500;
+}
+#article-power-by-apptha a{
+	
+text-decoration:  none;
+cursor: pointer;
+}
+#article-power-by-apptha a:HOVER{
+	
+	color: red;
+	
+}
+
+
